@@ -7,11 +7,62 @@
     <title>MariyaraJu Indla - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      @keyframes gradient-bg {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
       body {
-        background-image: url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        background: linear-gradient(-45deg, #1e3a8a, #0c4a6e, #1e40af, #3b82f6);
+        background-size: 400% 400%;
+        animation: gradient-bg 25s ease infinite;
+      }
+
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-out forwards;
+      }
+      
+      @keyframes gradient-text-animation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .animate-gradient-text {
+        background: linear-gradient(to right, #3b82f6, #60a5fa, #93c5fd);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-text-animation 4s ease infinite;
+      }
+
+      @media print {
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        body {
+          animation: none !important;
+          background: #fff !important;
+        }
+        .no-print {
+          display: none !important;
+        }
+        main, section {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        #resume-container {
+          box-shadow: none !important;
+          border: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          max-width: 100% !important;
+          color: #000 !important;
+        }
       }
     </style>
     <style type="text/tailwindcss">
@@ -26,7 +77,9 @@
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
     "react/": "https://esm.sh/react@^19.1.1/",
-    "react": "https://esm.sh/react@^19.1.1"
+    "react": "https://esm.sh/react@^19.1.1",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1"
   }
 }
 </script>
