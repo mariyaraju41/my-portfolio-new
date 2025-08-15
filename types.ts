@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   tech: string[];
   date: string;
-  description: string;
+  description: string[];
   link: string;
 }
 
