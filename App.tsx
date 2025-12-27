@@ -11,7 +11,7 @@ const profileImage = "https://media.licdn.com/dms/image/v2/D5603AQHZzXJ0HqULaA/p
 const professionalSummary = "Motivated Software Developer with hands-on experience in designing, developing, debugging, and enhancing scalable applications and tools using Java, Spring Boot, and React.js. Skilled in modern software architecture, RESTful APIs, and database-driven application logic. Proficient in building microservices, troubleshooting complex bugs, and deploying secure cloud-based applications. Passionate about clean code and continuous learning.";
 
 const technicalSkills: SkillCategory[] = [
-    { title: "Languages", skills: ["Java", "JavaScript", "TypeScript"] },
+    { title: "Languages", skills: ["Java 8+", "JavaScript", "TypeScript"] },
     { title: "Frameworks/Tech", skills: ["Spring Boot", "Node.js", "React.js", "Angular", "Express.js"] },
     { title: "Databases", skills: ["MySQL", "SQL"] },
     { title: "Tools/Cloud", skills: ["AWS (EC2, S3, Lambda)", "Git", "Docker", "Kubernetes"] },
