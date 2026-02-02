@@ -8,7 +8,7 @@ import { EnvelopeIcon, PhoneIcon, LinkedinIcon, GithubIcon, CertificateIcon, Doc
 // --- DATA FROM RESUME ---
 const profileImage = "https://media.licdn.com/dms/image/v2/D5603AQHZzXJ0HqULaA/profile-displayphoto-shrink_400_400/B56ZT2QfvXGsAg-/0/1739298307808?e=1771459200&v=beta&t=curD0WQ_R3zARL8v3SUeGlHPwTT7kd3zoxvi4trg6IM";
 
-const professionalSummary = "Moddalo Software Developer with hands-on experience in designing, developing, debugging, and enhancing scalable applications and tools using Java, Spring Boot, and React.js. Skilled in modern software architecture, RESTful APIs, and database-driven application logic. Proficient in building microservices, troubleshooting complex bugs, and deploying secure cloud-based applications. Passionate about clean code and continuous learning.";
+const professionalSummary = "Motivated Software Developer with hands-on experience in designing, developing, debugging, and enhancing scalable applications and tools using Java, Spring Boot, and React.js. Skilled in modern software architecture, RESTful APIs, and database-driven application logic. Proficient in building microservices, troubleshooting complex bugs, and deploying secure cloud-based applications. Passionate about clean code and continuous learning.";
 
 const technicalSkills: SkillCategory[] = [
     { title: "Languages", skills: ["Java 8+", "JavaScript", "TypeScript"] },
